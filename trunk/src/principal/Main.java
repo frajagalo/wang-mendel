@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package principal;
 
 import entrada.Datos;
 import wangmendel.AlgoritmoWM;
 import wangmendel.Parametros;
-
 /**
  *
  * @author Iván
