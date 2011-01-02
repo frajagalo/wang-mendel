@@ -10,7 +10,7 @@ import wangmendel.Parametros;
 
 /**
  *
- * @author ivan
+ * @author Iván
  */
 public class Main {
 
@@ -19,10 +19,11 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        String fichero = Parametros.NFICHERO; //establecemos fichero por defecto
+        //establecemos fichero por defecto por si no se pasa como parametro.
+        String fichero = Parametros.NFICHERO; 
 
         if (args.length > 0) {
-            fichero = args[0];        //establecemos fichero pasado por parámetros
+            fichero = args[0];//establecemos fichero pasado por parámetros
         }
         System.out.println("\n/************************************************************"
                 + "\n * Algoritmo Wang & Mendel"
@@ -31,7 +32,7 @@ public class Main {
                 + "\n *"
                 + "\n * Fichero datos = " + fichero
                 + "\n ************************************************************/\n");
-        
+        //Creamos el objeto que implemeta el algoritmo y lo ejecutamos. 
          AlgoritmoWM algoritmo=new AlgoritmoWM(new Datos(fichero));
          algoritmo.ejecutar();
     }
