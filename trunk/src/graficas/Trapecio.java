@@ -24,6 +24,17 @@ public class Trapecio {
     }
 
     public float getValor(float punto){
-       return 1;
+       float salida=0;
+        if (punto<=baseA)
+            salida=0;
+        else if (punto>baseA && punto<=techoA)
+            salida=(punto-baseA)/(techoA-baseA);
+        else if (punto>techoA && punto<=techoB)
+            salida=1;
+        else if (punto>techoB && punto<=baseB)
+            salida=(baseB-punto)/(baseB-techoB);
+        else if (punto>baseB)
+            salida=0;
+        return salida;
     }
 }
