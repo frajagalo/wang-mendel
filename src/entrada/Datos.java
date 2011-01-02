@@ -53,7 +53,7 @@ public class Datos {
             reg.setBlueRed(Float.valueOf(tokens[1]));
             reg.setGreenBlue(Float.valueOf(tokens[2]));
             reg.setRedGreen(Float.valueOf(tokens[3]));
-            reg.setTipo(Integer.parseInt(tokens[4].trim()));
+            reg.setTipo(Short.parseShort(tokens[4].trim()));
             this.registros.add(reg);
             
 
