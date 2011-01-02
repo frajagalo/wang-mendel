@@ -14,10 +14,9 @@ public class Registro {
     private Float blueRed;
     private Float greenBlue;
     private Float redGreen;
-    private Integer tipo;
+    private short tipo;
 
 
-    
     public Float getBlueRed() {
         return blueRed;
     }
@@ -42,11 +41,11 @@ public class Registro {
         this.redGreen = redGreen;
     }
 
-    public Integer getTipo() {
+    public short getTipo() {
         return tipo;
     }
 
-    public void setTipo(Integer tipo) {
+    public void setTipo(short tipo) {
         this.tipo = tipo;
     }
 
