@@ -11,27 +11,27 @@ package wangmendel;
  */
 public class Regla {
 
-    private Float blueRed;
-    private Float greenBlue;
-    private Float redGreen;
-    private Integer consecuente;
+    private short blueRed;
+    private short greenBlue;
+    private short redGreen;
+    private short consecuente;
     private Float peso;
 
 
-    public Regla(Float br, Float gb, Float rg, Float peso)
+    public Regla(short br, short gb, short rg, Float peso)
     {
         
     }
 
-    public Float getBlueRed() {
+    public short getBlueRed() {
         return blueRed;
     }
 
-    public Integer getConsecuente() {
+    public short getConsecuente() {
         return consecuente;
     }
 
-    public Float getGreenBlue() {
+    public short getGreenBlue() {
         return greenBlue;
     }
 
@@ -39,19 +39,29 @@ public class Regla {
         return peso;
     }
 
-    public Float getRedGreen() {
+    public short getRedGreen() {
         return redGreen;
     }
 
-    public void setConsecuente(Integer consecuente) {
-        this.consecuente = consecuente;
+    public void setPeso(Float peso) {
+        this.peso = peso;
     }
 
+
+    public static String obtenerID(short br, short gb, short rg)
+    {
+        String id;
+        id=String.valueOf(br);
+        id.concat(String.valueOf(gb));
+        id.concat(String.valueOf(rg));
+        
+        return id;
+    }
     
 
     public String construirID()
     {
-        return "a";
+        return obtenerID(this.blueRed, this.greenBlue, this.redGreen);
     }
 
 }
