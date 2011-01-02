@@ -47,8 +47,12 @@ public class Regla {
         this.peso = peso;
     }
 
+    public void setConsecuente(short consecuente) {
+        this.consecuente = consecuente;
+    }
 
-    public static String obtenerID(short br, short gb, short rg)
+
+    public static String construirID(short br, short gb, short rg)
     {
         String id;
         id=String.valueOf(br);
@@ -61,7 +65,7 @@ public class Regla {
 
     public String construirID()
     {
-        return obtenerID(this.blueRed, this.greenBlue, this.redGreen);
+        return construirID(this.blueRed, this.greenBlue, this.redGreen);
     }
 
 }
