@@ -49,9 +49,9 @@ public class Regla {
 
     
 
-    public void construirID(String id)
+    public String construirID()
     {
-        
+        return "a";
     }
 
 }
