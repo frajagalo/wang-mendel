@@ -8,10 +8,11 @@ import wangmendel.Parametros;
 
 /**
  *
- * @author ivan
+ * @author Iván
  */
 public class Particiones {
 
+    //Tres trapecios que forman las particiones correspodientes a una variable
     private Trapecio pequenho;
     private Trapecio mediano;
     private Trapecio grande;
@@ -22,6 +23,8 @@ public class Particiones {
         this.grande = grande;
     }
 
+    /*Devuelve el valor que tiene el argumento punto en el trapecio indicado como part.
+     Si el trapecio indicado no es válido devuelve -1.*/
     public float getValor(short part, float punto) {
         if (part == Parametros.PEQUENO) {
             return pequenho.getValor(punto);

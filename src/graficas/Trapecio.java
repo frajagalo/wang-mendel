@@ -7,9 +7,11 @@ package graficas;
 
 /**
  *
- * @author ivan
+ * @author Iván
  */
 public class Trapecio {
+    /*La recta que une techoA y techoB forma el techo del trapecio, mientras
+     que la recta que une baseA y baseB da lugar a la base del mismo.*/
     float techoA;
     float techoB;
     float baseA;
@@ -23,6 +25,8 @@ public class Trapecio {
        this.baseB=baseB;
     }
 
+    /*Método que devuelve el valor al que corresponde el argumento punto en dicho
+     trapecio. */
     public float getValor(float punto){
        float salida=0;
         if (punto<=baseA)
