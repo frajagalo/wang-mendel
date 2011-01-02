@@ -20,7 +20,10 @@ public class Regla {
 
     public Regla(short br, short gb, short rg, Float peso)
     {
-        
+        this.blueRed=br;
+        this.greenBlue=gb;
+        this.redGreen=rg;
+        this.peso=peso;
     }
 
     public short getBlueRed() {
@@ -55,9 +58,7 @@ public class Regla {
     public static String construirID(short br, short gb, short rg)
     {
         String id;
-        id=String.valueOf(br);
-        id.concat(String.valueOf(gb));
-        id.concat(String.valueOf(rg));
+        id=String.valueOf(br)+String.valueOf(gb)+String.valueOf(rg);
         
         return id;
     }
