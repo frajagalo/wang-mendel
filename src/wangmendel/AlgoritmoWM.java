@@ -63,7 +63,6 @@ public class AlgoritmoWM implements Parametros {
             //Le añadimos el consecuente para formar la regla completa
             mejor.setConsecuente(datos.getRegistros().get(i).getTipo());
             //La añadimos a la tabla que simula la matriz de reglas.
-            System.out.println("~~~"+mejor.getPeso());
             tablaReglas.addRegla(mejor);
         }
         //Imprimimos la matriz de reglas una vez finalizado el algoritmo. 

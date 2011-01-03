@@ -55,7 +55,6 @@ public class TablaReglas{
             {
                 Map.Entry e=(Map.Entry)it.next();
                 regla=(Regla)e.getValue();
-                System.out.println("Regla"+regla.getPeso());
                 System.out.println("if (blueRed is "+textoAntecedente(regla.getBlueRed())
                                    +") and (greenBlue is "+textoAntecedente(regla.getGreenBlue())
                                    +") and (redGreen is "+textoAntecedente(regla.getRedGreen())
