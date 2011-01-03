@@ -32,8 +32,6 @@ public class TablaReglas {
         }
         else
             listaReglas.put(id, regla);
-
-        System.out.println(id);
     }
 
     public void imprimir()
