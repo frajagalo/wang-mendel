@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author porto
  */
-public class TablaReglas {
+public class TablaReglas{
     
     private HashMap<String,Regla> listaReglas;
 
@@ -24,14 +24,22 @@ public class TablaReglas {
 
     public void addRegla(Regla regla)
     {
+        Regla copiaRegla;
         String id=regla.construirID();
+        
         if(listaReglas.containsKey(id))
         {
             if(listaReglas.get(id).getPeso()< regla.getPeso())
-                listaReglas.put(id, regla);
+            {
+                copiaRegla=(Regla)regla.clone();
+                listaReglas.put(id, copiaRegla);
+            }
         }
         else
-            listaReglas.put(id, regla);
+        {
+            copiaRegla=(Regla)regla.clone();
+            listaReglas.put(id, copiaRegla);
+        }
     }
 
     public void imprimir()
