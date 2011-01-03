@@ -9,7 +9,7 @@ package wangmendel;
  *
  * @author porto
  */
-public class Regla {
+public class Regla implements Cloneable {
 
     private short blueRed;
     private short greenBlue;
@@ -67,6 +67,19 @@ public class Regla {
     public String construirID()
     {
         return construirID(this.blueRed, this.greenBlue, this.redGreen);
+    }
+
+    @Override
+    public Object clone()
+    {
+        Object clon=null;
+        try{
+            clon=super.clone();
+
+        }catch (CloneNotSupportedException cne){
+            System.out.println("Error al intentar clonar el objeto Regla, operación no soportada");
+        }
+        return clon;
     }
 
 }
