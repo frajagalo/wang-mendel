@@ -20,14 +20,16 @@ public interface Parametros {
       public static String NFICHERO="evidenciaSensor.csv";
       /*Trapecios que encapsulan las particiones de cada una de las tres
        variables del antecedente.*/
-      public static Trapecio BR_PEQUENO=new Trapecio(0,375,0,1125);
-      public static Trapecio BR_MEDIANO=new Trapecio(1500,1500,750,2250);
-      public static Trapecio BR_GRANDE=new Trapecio(2625,3000,1875,3000);
-      public static Trapecio GB_PEQUENO=new Trapecio(1500,1750,1500,2250);
-      public static Trapecio GB_MEDIANO=new Trapecio(2500,2500,2000,3000);
-      public static Trapecio GB_GRANDE=new Trapecio(3250,3500,2750,3500);
-      public static Trapecio RG_PEQUENO=new Trapecio(500,1625,500,2000);
-      public static Trapecio RG_MEDIANO=new Trapecio(2000,2000,1250,2750);
-      public static Trapecio RG_GRANDE=new Trapecio(3125,3500,2375,3500);
+      public static Trapecio BR_PEQUENO=new Trapecio(0,30,0,1508);
+      public static Trapecio BR_MEDIANO=new Trapecio(1508,1508,30,2986);
+      public static Trapecio BR_GRANDE=new Trapecio(2986,3016,1508,3016);
+
+      public static Trapecio GB_PEQUENO=new Trapecio(1474,1504,1474,2482);
+      public static Trapecio GB_MEDIANO=new Trapecio(2482,2482,1504,3460);
+      public static Trapecio GB_GRANDE=new Trapecio(3460,3490,2482,3490);
+      
+      public static Trapecio RG_PEQUENO=new Trapecio(526,556,526,2024);
+      public static Trapecio RG_MEDIANO=new Trapecio(2024,2024,556,3492);
+      public static Trapecio RG_GRANDE=new Trapecio(3492,3522,2024,3522);
 
 }

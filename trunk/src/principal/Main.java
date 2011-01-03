@@ -29,7 +29,6 @@ public class Main {
                 + "\n * Algoritmo Wang & Mendel"
                 + "\n * Problema: Clasificación de vidrio"
                 + "\n * Autores: Iván Carballo Fernández & Pablo Porto Veloso"
-                + "\n *"
                 + "\n * Fichero datos = " + fichero
                 + "\n ************************************************************/\n");
         //Creamos el objeto que implemeta el algoritmo y lo ejecutamos. 
