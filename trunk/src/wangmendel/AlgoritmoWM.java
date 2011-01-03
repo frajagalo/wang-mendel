@@ -20,6 +20,7 @@ public class AlgoritmoWM implements Parametros {
     public AlgoritmoWM(Datos datos) {
         this.datos = datos;
         seleccionRegla = new SeleccionRegla();
+        tablaReglas=new TablaReglas();
         /*Creamos las particiones a partir de los objetos Trapecio que existen
          en Parametros. Estos objetos modulan las gráficas de las particiones.*/
         partBR = new Particiones(BR_PEQUENO, BR_MEDIANO, BR_GRANDE);
@@ -62,7 +63,8 @@ public class AlgoritmoWM implements Parametros {
             //Le añadimos el consecuente para formar la regla completa
             mejor.setConsecuente(datos.getRegistros().get(i).getTipo());
             //La añadimos a la tabla que simula la matriz de reglas.
-            tablaReglas.addRegla(seleccionRegla.getMejorRegla());
+            System.out.println("~~~"+mejor.getPeso());
+            tablaReglas.addRegla(mejor);
         }
         //Imprimimos la matriz de reglas una vez finalizado el algoritmo. 
         tablaReglas.imprimir();

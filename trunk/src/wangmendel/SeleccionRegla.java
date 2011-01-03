@@ -30,7 +30,7 @@ public class SeleccionRegla {
             while (i.hasNext()) {
                 me = (Map.Entry) i.next();
                 actual=me.getValue();
-                if (actual.getPeso() > mayor) {
+                if (actual.getPeso() >=mayor) {
                     mayor = actual.getPeso();
                     mejorRegla = actual;
                 }
