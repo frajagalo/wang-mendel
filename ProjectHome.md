@@ -1,0 +1,1 @@
+Implementación del algoritmo Wang & Mendel para solucionar un problema de clasificación (colores de vidrios) basándose en reglas borrosas.
